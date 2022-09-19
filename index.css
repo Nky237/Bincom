@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,400&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    /* width: 100%; */
+
+}
+
+
+#navbar{
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    background-color: white;
+    z-index: 1000;
+}
+ul{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    font-size: 23px;
+    color: black;
+    font-weight: 300;
+    
+   
+}
+li a:hover, li a:active{
+    /* text-decoration: underline;
+    text-decoration-color: blue; */
+    content: '';
+    height: 2px;
+    width: 100%;
+    border-bottom: 3px solid blue;
+    transition:  0.3s;
+    
+    }
+.harmburger{
+    display: none;
+    cursor: pointer;
+}
+.harmburger i{
+    -webkit-transition: all 0.3s ease-in-out ;
+    transition: all 0.9s ease-in-out;
+    color: #010E1B;
+}
+
+/* STICKY */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+/* BODY SECTION */
+
+.container{
+    display: grid;
+    grid-template-rows: (6 1fr) ;
+    padding-top: 90px;
+    color: white;
+    background-color: #010E1B;
+    width: 100%;
+  }
+  .container >div{
+    /* border: 1px solid black; */
+    min-height: 200px;
+  }
+  /* INTRO SECTION */
+  .intro{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+.intro-text h1{
+    font-size: 80px;
+    line-height: 130px;
+    padding-top: 60px;
+}
+
+#text {
+	display: inline-block;
+    font-size: 37px;
+	letter-spacing: 4px;
+    font-weight: 700;
+}
+
+/* #cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 50px;
+	background-color: black;
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: orange; 
+	}
+}  */
+
+/* buttons */
+.btn{
+    position: relative;
+    text-decoration: none;
+    color: purple;
+    background-color: #12D640;
+    font-size: 16px;
+    font-weight: 200;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 60px 0 60px 0;
+    margin-top: 70px;
+    transition: all ease 0.5s;
+}
+.btn a{
+    text-decoration: none;
+    color: #010E1B;
+}
+
+.btn:hover{
+    background-color: purple;
+  
+}
+.btn:hover a{
+    color: white;
+}
+
+.btny{
+text-align: center;
+}
+.btno{
+    margin-top: 10px;
+    height: 50px;
+    width: 140px;
+    background-color: #12D640;
+    border-radius: 15px;
+    transition: all 1s ease-in-out;
+}
+.btno:hover{
+    filter: grayscale(0);
+    transform: scale(1.15); 
+    background-color: purple;
+    color: white;
+}
+.btno a{
+    text-decoration: none;
+    color: #010E1B;
+    font-size: 18px;
+   
+}
+.icon{
+    padding-top: 20px;
+}
+.icon a{
+    text-decoration: none;
+ 
+}
+.icon i{
+    font-size: 34px;
+    color: white;
+    padding: 3px 10px;
+    transition: 0.5s;
+}
+.icon i:hover{
+    background-color: #12D640;
+}
+.intro-img{
+/* border: 2px solid white; */
+height: 600px;
+width: 50%;
+border-radius: 50%;
+padding-top: 60px;
+}
+.intro-img img{
+    width: 100%;
+    object-fit: cover;
+    height: 600px;
+    border-radius: 50%;
+}
+#about, #skill, #service, #contact, #projects{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+#about p, #skill p, #service p{
+    line-height: 37px;
+}
+/* ABOUT SECTION */
+#about, #contact {
+   background-color: white;
+    color: black;
+    width: 100%;
+    padding-left: 40px;
+    
+}
+#service{
+   background-color: white;
+    color: black;
+    width: 100%;
+    padding-left: 40px;
+    
+}
+#about h1, .skill-title h1, .service-title h1, .contact-title h1, .pro-title h1, .picsy-title h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 33px;
+    padding-bottom: 60px;
+    color: #12D640;
+}
+.about-title, .skill-title, .service-title, .contact-title, .pro-title, .picsy-title{
+    position: relative;
+}
+.about-title:before, .skill-title:before, .service-title:before, .contact-title:before, .pro-title:before, .picsy-title:before {
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    width: 190px;
+    height: 4px;
+    background: #12D640;
+    transform: translateX(-50%);
+}
+
+.about-title:after, .skill-title:after, .service-title:after, .contact-title:after, .pro-title:after, .picsy-title:after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #12D640;
+    transform: translateX(-50%);
+
+}
+
+.about-body{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+.about-pic{
+    height: 400px;
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.about-text{
+    width: 40%;
+}
+
+/* picture section */
+.pictures{
+    margin-top: 80px;
+}
+.picy{
+    padding-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.picy >div{
+    height: 300px; 
+    width: 240px;
+    
+}
+.picy img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 23%;
+    transition: all 0.4s ease-in-out;
+    
+
+
+}
+.picy img:hover{
+    cursor: pointer;
+    filter: grayscale(100);
+    transform: scale(1.15);
+  
+}
+
+/* SKILL SECTION */
+.skill-body{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skill-text{
+    width: 40%;
+}
+.skill-pic{
+    width: 40%;
+}
+.bar {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.bar .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.bar .info span {
+    font-size: 18px;
+    font-weight: 500;
+}
+.bar .line {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background: #999999;
+    border-radius: 2px;
+}
+
+.bar .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+}
+
+.bar .html::before {
+    width: 95%;
+    background: #e45126;
+}
+
+.bar .css::before {
+    width: 85%;
+    background: #0c73b8;
+}
+
+.bar .javascript::before {
+    width: 80%;
+    background: #e3a324;
+}
+.bar .bootstrap::before{
+    width: 80%;
+    background-color: #12D640;
+}
+.bar .React::before{
+    width: 50%;
+    background-color: blueviolet;
+}
+.bar .python::before{
+    width: 50%;
+    background-color: blueviolet;
+}
+.bar .Github::before{
+    width: 90%;
+    background-color: #12D640;
+}
+.bar .Tailwind::before{
+    width: 70%;
+    background-color: brown;
+}
+
+/* SERVICES */
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.content .card {
+    background: #fff;
+    width: 340px;
+    margin: 10px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(1 1 1 / 15%);
+}
+
+.content .card .service-icon {
+    color: #12D640;
+    font-size: 2em;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.content .card:hover .service-icon {
+    transform: translateY(-40px);
+}
+
+.content .card .info {
+    text-align: center;
+}
+
+.content .card .info h3 {
+    color: #12D640;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.service-text{
+    text-align: center;
+}
+
+/* contact secction */
+#contact{
+    padding-left: 0;
+}
+.contact-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-card >div{
+    height: 200px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card1 p{
+    text-align: center;
+    padding-top: 10px;
+}
+.card1 i{
+    font-size: 30px;
+    padding-top: 10px;
+}
+.form{
+   min-height: 700px;
+   margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 300px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.form input{
+    height: 60px;
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+}
+.form textarea{
+    border-radius: 5px;
+    width: 90%;
+    margin: auto; 
+    padding: 20px;
+    font-size: 20px;
+}
+.form-btn{
+    background-color: #12D640;
+    color: white;
+    height: 60px;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+
+/* PROJECT  */
+.pro-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pro-all >div{
+    height: 300px;
+    width: 300px;
+    border-radius: 22px;
+}
+.pro-all >div img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 22px;
+    filter: grayscale(100);
+    transition: all 0.4s ease-in-out;
+}
+.pro-all >div img:hover{
+    filter: grayscale(0);
+    transform: scale(1.15);
+}
+.pro-all >div p{
+    color: white;
+    text-align: center;
+}
+.resume{
+    text-align: center;
+}
+.resume button{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* FOOTER */
+footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foot-icon i{
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+
+/* MEDIA QUERIES */
+
+/* Nav bar */
+@media only screen and (max-width:950px){
+body{
+    overflow-x: hidden;
+}
+    .harmburger{
+    display: block;
+}
+.harmburger i{
+    font-size: 37px;
+}
+.nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #010E1B;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    height: 100%;
+    
+    
+
+}
+.nav-menu{
+    justify-content: space-evenly;
+    
+}
+.nav-menu li a{
+    color: white;
+    
+}
+.nav-menu li{
+    margin: 10px 0;
+}
+.nav-menu.active{
+    left: 0;
+
+}
+/* INTRO */
+.intro{
+flex-direction: column;
+padding-left: 20px;
+}
+.intro-text{
+    padding-top: 100px;
+}
+.intro-img{
+    width: 70%;
+    margin-top: 30px;
+
+}
+.intro-text h1{
+    font-size: 40px;
+}
+
+#text {
+    font-size: 27px;
+   
+}
+/* .intro{
+    padding-left: 20px;
+} */
+/* ABOUT */
+.about-body{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.about-pic, .about-text{
+    width: 90%;
+    
+}
+.about-pic, .skill-text{
+    margin-bottom: 30px;
+}
+
+/* SKILLS */
+.skill-body{
+    display: flex;
+    flex-direction: column;
+   
+}
+.skill-text, .skill-pic{
+    width: 90%;
+    margin: auto;
+}
+.skill-pic{
+    margin-top: 30px;
+}
+.contact-card >div {
+    width: 300px;
+    
+}
+}
+@media only screen and (max-width:460px){
+  /* body{
+    overflow-x: hidden;
+  }  */
+  .container{
+    background-color: white;
+  }
+  footer,.intro, #skill, #projects {
+    background-color: #010E1B;
+    width: 100%;
+  } 
+  #about {
+   padding-left: 40px;
+  }
+  #service{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+     
+/* INTRO */
+.intro{
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.intro h1{
+    line-height: 90px;
+}
+.intro-img img{
+    height: 250px;
+}
+.intro-img{
+    height: 250px;
+    margin: auto;
+    padding-top: 20px;
+}
+  .card.reveal{
+    width: 300px;
+  }
+/* ABOUT */
+.picy{
+    justify-content: center;
+}
+.picy >div{
+    margin: 10px 0;
+}
+  /* services */
+  .service-body{
+    margin: auto;
+  }
+  .content{
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 300px){
+  .card .card.reveal{
+    width: 60%;
+  }  
+}
